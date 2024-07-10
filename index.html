@@ -1,0 +1,78 @@
+<head>
+  <meta charset="utf-8" />
+  <title>Amigos invisibles
+  </title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div id="app">
+    <section id="event-details-container">
+      <h1>Amigo Invisible</h1>
+
+      <p><i class="material-icons">calendar_today</i> 5 Enero</p>
+      <!-- ADD THE RSVP BUTTON HERE -->
+      <button id="startRsvp">Registrar</button>
+    </section>
+
+    <hr />
+
+    <section id="firebaseui-auth-container"></section>
+
+    <section id="description-container">
+      <h2>Repositorio de regalos</h2>
+      <ul>
+        <li>
+          Podrás poner los regalos que se te ocurran para la gente que
+          participa.
+        </li>
+        <li>No podrás ver los regalos que otra persona ha pensado para tí</li>
+        <li>
+          podrás añadir regalos a tu propia lista para darle ideas a quien te
+          regale.
+        </li>
+      </ul>
+    </section>
+
+    <section id="guestbook-container">
+      <h2>¿Quien Eres?</h2>
+      <!-- Aquí introducir lista dinamica con js -->
+      <section id="senderSelection"></section>
+
+      <h2>Regalos</h2>
+      <section id="todos_regalos" style="display: none">
+        <table id="tabla_regalos">
+          <tr id="fila_labels">
+            
+          </tr>
+          <tr id="fila_regalos">
+            
+          </tr>
+          <tr id="fila_formularios">
+          
+          </tr>
+        </table>
+      </section>
+    </section>
+  </div>
+</body>

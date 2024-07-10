@@ -1,0 +1,5 @@
+
+
+function getConfig() {
+  return firebaseConfig;
+}
